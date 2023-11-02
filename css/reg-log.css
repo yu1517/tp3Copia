@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&family=Roboto:ital,wght@0,300;1,400&display=swap');
+/*fuente
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;*/
+
+/*=============Página Registro=============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.register_page {
+    background-color: #373952;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+img.logo {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+h1,h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: -90px;
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #10EE4E;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 500px;
+    background-color: #1C1F3A;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: solid 1px;
+    justify-content: center;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;    
+}
+
+.label span {
+    color: red;
+}
+
+.input-form {
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/*Estilos para el reCaptcha*/
+.robot {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #D9D9D9;
+    height: 65px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.tx-small {
+    margin-left: 10px;
+    size: smaller;
+    color: black;
+}
+
+.robot .check {
+    width: 70%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Ajusta el tamaño del checkbox */
+.check .input-check[type="checkbox"] {
+    transform: scale(1.5); /* Cambia el valor para ajustar el tamaño del checkbox */
+    margin-right: 5px; 
+    width: 15px;    
+}
+
+.btn_form {
+    background-color: #5335CC;
+    color: #fff;
+    width: 330px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-family: 'Lato', sans-serif;
+    border: #5335CC;
+    cursor: pointer;
+}
+
+button.btn_form a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-container .btn_form {
+    margin-top: 20px;
+}
+
+.register {
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    place-content: center;
+    align-items: center;   
+}
+
+/*=============Página Login=============*/
+
+.logo-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3.txt-login {
+    color: #fff
+}
+.btn-redes-login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-dark {
+    margin-bottom: 15px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    cursor: pointer;
+}
+.logo-button{    
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.logo-button1{    
+    margin-right: 10px;
+    margin-left: 18px;
+    margin-top: 5px;
+}
+.text-button p{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.54px;   
+    margin-left: 50px;       
+}
+
+div.linea p.txt-small {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.linea-efecto {
+    display: inline-block;
+    position: relative;
+}
+
+p.linea-efecto::after, p.linea-efecto::before{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    background-color: #fff;
+    top: 0.6em;
+}
+p.linea-efecto::before{
+    left: -160px;
+}
+p.linea-efecto::after{
+    right: -160px;
+}
+
+.user_log{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.user_log .labelog{
+    margin-bottom: 5px;
+    font-size: 16px;        
+}
+
+.input-form, .btn-dark {
+    width: 330px;
+    height: 40px;
+    background-color: #373952;
+    border: 1px solid #373952;
+    border-radius: 10px;
+}
+
+a#tx-ancor {
+    margin-left: 5px;
+    size: smaller;
+    background: linear-gradient(180deg, #F51F1F 0%, #FF00B8 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*=================== Boton animado ===================*/
+.btn {
+    background-color: transparent;
+    border-radius:15px;
+    border:transparent;
+    width: 330px;
+    height: 45px;    
+    position: relative;
+    margin: auto;    
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 15px;
+    background-color: #5335CC;
+    width: 56px;
+    height: 45px;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  button.btn a {
+    color:#fff;
+    text-decoration:none;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    /* line-height: 18px; */
+    letter-spacing: 4px;
+    /* text-transform: uppercase; */
+    /* vertical-align: middle; */
+  }
+  
+  button.btn svg {
+    margin-bottom: 4px;
+    top: 0;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #fff ;
+    stroke-width: 2;
+    transform: translateX(-40px);
+    transition: all 0.3s ease;
+    margin-right:15px;
+  }
+  
+  .btn:hover:before {
+    width: 100%;
+    background-color: #5335CC;
+  }
+  
+  .btn:hover svg {
+    transform: translateX(0);
+  }
+  
+  .btn:active {
+    transform: scale(0.96);
+  }

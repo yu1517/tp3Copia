@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reg-log.css">
+    <title>Login</title>
+</head>
+
+<body class="register_page">
+    <header>
+        <div class="logo-login">
+            <img src="./img/logo-reg.png" alt="logo">
+        </div>
+    </header>
+
+    <section class="form-container">
+        <!-- <h3 class="txt-login">Iniciá Sesión</h3> -->
+
+        <div class="btn-redes-login">
+            <button class="btn-dark">
+                <div class="logo-button">
+                    <img src="./img/icon g-google.png" alt="google">
+                </div>
+                <div class="text-button">
+                    <p>Iniciar con Google</p>
+                </div>
+            </button>
+            <button class="btn-dark">
+                <div class="logo-button1">
+                    <img src="./img/icon f-facebook.png" alt="facebook">
+                </div>
+                <div class="text-button">
+                    <p>Iniciar con Facebook</p>
+                </div>
+            </button>
+        </div>
+
+        <div class="linea">
+            <p class="txt-small linea-efecto">O</p>
+        </div>
+
+        <div class="form_log">
+            <form class="user_log" id="form_register">
+                <label class="labelog" for="fname">Correo Electrónico</label>
+                <input class="input-form" type="email" name="" value="" id="fname" required>
+                <label class="labelog" for="lname">Contraseña</label>
+                <input class="input-form" type="password" name="" value="" id="lname" required>
+                <!-- <button class="btn_form" type="submit" id="btnAdd"><a href="index.html">Iniciar Sesión</a></button> -->
+                <button class="btn " type="submit" id="btnAdd">
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>  
+                    <a href="index.html">Iniciar Sesión</a>
+                </button>
+            
+            </form>
+        </div>
+
+        <span class="register">
+            ¿Todavia sin cuenta?
+            <a href="registro.html" id="tx-ancor">Registrate ahora</a>
+        </span>
+
+    </section>
+</body>
+
+</html>

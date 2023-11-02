@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reg-log.css">
+    <title>Registro</title>
+</head>
+
+<body class="register_page">
+    <header>
+        <img src="./img/logo-reg.png" class="logo" alt="logo">
+        <h1>Crea tu cuenta</h1>
+        <h3>¡GRATIS!</h3>
+    </header>
+
+    <section class="form-container">
+        <div class="form_block">
+            <form class="user_load" id="form_register">
+                <label class="label" for="fname">Nombre <span>*</span></label>
+                <input class="input-form" type="text" name="" value="" id="fname" required>
+                <label class="label" for="lname">Apellido <span>*</span></label>
+                <input class="input-form" type="text" name="" value="" id="lname" required>
+                <label class="label" for="age">Edad <span>*</span></label>
+                <input class="input-form" type="number" name="" value="" id="age" required>
+                <label class="label" for="email">Email <span>*</span></label>
+                <input class="input-form" type="email" name="" value="" id="email" required>
+                <label class="label" for="nickname">Nickname</label>
+                <input class="input-form" type="text" name="" value="" id="nickname">
+                <label class="label" for="pass">Contraseña <span>*</span></label>
+                <input class="input-form" type="password" name="" value="" id="pass" required>
+                <label class="label" for="rep_pass">Repetir Contraseña <span>*</span></label>
+                <input class="input-form" type="password" name="" value="" id="rep_pass" required>
+                <label class="label" for=""></label>
+            
+
+                <div class="robot">
+                    <div class="check">
+                        <input class="input-check"  type="checkbox" name="robot" id="robot" value="off" required>
+                        <p class="tx-small">No soy un robot</p>
+                    </div>
+                    <img src="./img/logo_recaptcha.png" alt="captcha">
+                </div>
+
+                <button class="btn_form" type="submit" id="btnAdd">Regístrate</button>
+            
+                <div class="msj"></div>
+
+                
+                <span class="register">
+                    ¿Ya tienes cuenta?
+                    <a href="login.html" id="tx-ancor"> Inicia sesion</a>
+                </span>
+            </form>
+        </div>
+    </section>
+    <script src="./js/register.js"></script>
+
+</body>
+
+</html>
